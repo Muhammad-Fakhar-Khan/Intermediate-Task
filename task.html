@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="task.css">
+  </head>
+  <body>
+    <div class="login_form_container">
+        <div class="login_form">
+          <h2>Login</h2>
+         
+          <form id="loginForm">
+            
+            <div class="input_group">
+              <i class="fa fa-user"></i>
+              <input type="text" placeholder="Username" class="input_text" autocomplete="off" id="username" />
+              <span id="usernameError" class="error-message"></span>
+            </div>
+
+            <div class="input_group">
+              <i class="fa fa-unlock-alt"></i>
+              <input type="password" placeholder="Password" class="input_text" autocomplete="off" id="password" />
+              <span id="passwordError" class="error-message"></span>
+            </div>
+
+            <div class="button_group" id="login_button">
+              <a id="submitButton">Submit</a>
+            </div>
+
+          </form>
+
+          <div class="footer">
+            <a id="forgotPasswordLink">Forgot Password?</a>
+            <a>Sign Up</a>
+        </div>
+        
+        <div id="forgotPasswordModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Forgot Password? Enter your email to reset it.</p>
+                <input type="email" placeholder="Email" class="input_text" />
+                <button id="resetPasswordButton">Reset Password</button>
+            </div>
+        </div>
+      </div>
+      
+
+    <script src="task.js"></script>
+  </body>
+</html>
